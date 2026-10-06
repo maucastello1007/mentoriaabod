@@ -10,6 +10,71 @@
 
 /* Checkout e fotografia do mentor */
 .button,.nav-cta,.mobile-bar a{background:#39d887;color:#052b19;border-color:#59e89e}.button:hover,.nav-cta:hover,.mobile-bar a:hover{background:#6ce9a8;color:#052b19}.section-checkout{margin-top:32px}.portrait{aspect-ratio:990/1589;align-self:center}.portrait img{display:block;width:100%;height:auto;object-fit:contain}.mentor{align-items:center}
+/* Leitura: texto maior, contraste e espaço, sem alteração de conteúdo. */
+:root{--muted:#c0cdda;--gold:#cfb98f}
+body{font-size:18px;line-height:1.75}
+.lead,.problem-bottom p,.split-heading p:last-child,.steps p,.format-grid p,
+.week p,.result,.review-panel>div p,.kit p,.kit-list li,.check-list li,
+.not-for p,.mentor p,.investment-grid>div>p,details p,
+.final-cta p:not(.eyebrow),.banca p{font-size:18px;line-height:1.75}
+.lead{font-size:20px;max-width:560px}
+.steps p{max-width:none}
+.eyebrow,.hero .eyebrow{font-size:14px;line-height:1.65;letter-spacing:1.2px}
+.micro,.quiet-note,.panel-footer,.seal-note,.banca .seal-note,.installments,
+.enrollment-status,.scope p,.price-foot,.cohort-info,.investment-grid>div>.cohort-info,
+.site-footer,.final-brand{font-size:16px!important;line-height:1.75;color:#b9cbd9}
+.brand{font-size:12px;letter-spacing:.8px}
+nav{font-size:16px;gap:24px}
+.nav-cta{font-size:15px;min-height:48px;display:inline-flex;align-items:center}
+.button,.price-card .button{font-size:16px;line-height:1.5;letter-spacing:.3px;min-height:56px;max-width:100%;gap:18px;padding:19px 24px}
+.button span{flex-shrink:0}
+h3,.steps h3,.not-for h3{font-size:23px;line-height:1.3}
+.week h3{font-size:28px;line-height:1.3}
+.week-label,.result b,.steps span,.panel-label,.price-label,.exclusive,.comparison-head,
+.partner-lockup span{font-size:14px;line-height:1.65;letter-spacing:.8px}
+.facts>div{align-items:flex-start}.facts span{font-size:16px;line-height:1.55;max-width:none}.facts b{font-size:36px;line-height:1.3}
+.result{padding-left:18px}.result b{margin-bottom:8px}
+.review-panel{transform:none}.review-panel>div span{font-size:16px}.review-panel>div{gap:18px}
+.kit-list{columns:1}.kit-list li{padding-left:24px;padding-bottom:12px}
+.comparison-row{font-size:19px;line-height:1.6;gap:14px}.comparison-row>span:first-child{color:#b5c5d3}
+.comparison-head{gap:14px}.problem h2 span{color:#b5c5d3}
+.official{font-size:17px}.price small{font-size:18px}.scope b{font-size:18px;line-height:1.5}
+summary{font-size:19px;line-height:1.5;padding:24px 36px 24px 0}summary:after{top:22px;font-size:24px}
+details p{padding-bottom:26px}.faq{gap:50px}
+.art-tag{font-size:14px;padding:10px 13px}.art-heading,.art-bottom{font-size:11px;letter-spacing:.6px}
+.core>span{font-size:13px;letter-spacing:1px}.tag-two{top:340px}.tag-three{bottom:70px}
+.split-heading,.investment-grid{gap:50px}.format-grid{gap:22px}.format-grid article{padding:30px}
+.scope{grid-template-columns:250px 1fr}.price-card{padding:32px}
+.hero-copy,.split-heading>*,.investment-grid>*,.week>*,.faq>*,.kit>*{min-width:0}
+@media(max-width:1050px){
+ .facts{grid-template-columns:1fr 1fr;gap:28px 0}.facts>div:nth-child(2){border:0}
+ .format-grid{grid-template-columns:1fr}.investment-grid,.faq,.kit{grid-template-columns:1fr}
+ .kit-art{max-width:430px;width:100%;margin:auto}.price-card{max-width:620px;width:100%;margin:auto}
+ .hero{grid-template-columns:1fr}.hero-copy{max-width:760px}.hero-art{max-width:510px;width:100%;margin:auto}
+ .steps{grid-template-columns:1fr 1fr;gap:30px}.split-heading{gap:35px}
+}
+@media(max-width:760px){
+ .wrap{width:calc(100% - 40px)}header{flex-wrap:wrap;gap:16px}.brand{font-size:12px}
+ .nav-cta{font-size:15px;padding:12px 16px}.hero{padding-top:38px}
+ .hero h1.value-headline{font-size:clamp(36px,8.8vw,49px);line-height:1.18;letter-spacing:-1px}
+ .button,.price-card .button{width:100%;font-size:16px;padding:18px 20px;text-align:left}
+ .facts>div{display:block}.facts b{display:block;margin-bottom:8px}.facts span{font-size:16px}
+ .steps{grid-template-columns:1fr;gap:25px}.steps>div{padding-right:0}
+ .week{grid-template-columns:34px minmax(0,1fr);gap:14px}.week-no{font-size:28px}
+ .week h3{font-size:26px}.review-panel{padding:24px}.review-panel>div p{font-size:18px}
+ .kit-list{columns:1}.comparison-head,.comparison-row{grid-template-columns:minmax(0,1fr) 20px minmax(0,1fr);gap:10px}
+ .comparison-head{font-size:12px;letter-spacing:0}.comparison-row{font-size:17px}
+ .scope{grid-template-columns:1fr}.price-card{padding:28px 22px}.price>span{font-size:48px}
+ .partner-lockup{gap:12px}.partner-lockup span{font-size:12px;letter-spacing:.3px;padding-left:12px}
+ .hero-art{min-height:430px}.tag-one{top:65px}.tag-two{top:305px}.tag-three{bottom:46px;left:10px}
+ .art-heading,.art-bottom{font-size:10px}.art-bottom b{font-size:12px}.art-bottom b span{margin:0 5px}
+ .mobile-bar{gap:12px;flex-wrap:wrap;padding:12px 20px calc(12px + env(safe-area-inset-bottom))}
+ .mobile-bar span{font-size:14px;line-height:1.4}.mobile-bar a{font-size:16px;line-height:1.5;padding:12px 18px;min-height:48px;text-align:center;flex:1 0 auto}
+ .site-footer{padding-bottom:160px}.final-brand{letter-spacing:.6px}
+ .final-cta h2{font-size:32px}.banca h2{font-size:34px;line-height:1.3}
+}
+@media(max-width:380px){.mobile-bar span{width:100%;text-align:center}.mobile-bar a{width:100%}.hero .partner-lockup{flex-wrap:wrap}.comparison-row{font-size:16px}.hero-art .art-tag{font-size:12px}}
+
 
 </style></head>
 <body>
